@@ -3,18 +3,31 @@ import java.util.Scanner;
 public class p362_Navidad {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 		
-		int dia, mes;
-		
-		dia = sc.nextInt();
-		mes = sc.nextInt();
-		
-		while (dia < 32 && mes < 13) {
-			
-		}
-		
+		Scanner s = new Scanner(System.in);
 
+		int casos;
+		casos = s.nextInt();		
+
+		int dia;
+		int mes;
+
+		for(int i=1; i<=casos; i++){
+
+			dia = s.nextInt();
+			mes = s.nextInt();
+
+			if(dia == 25){
+				if(mes == 12){
+					System.out.println("SI");
+				} else {
+					System.out.println("NO");
+				}
+			} else {
+				System.out.println("NO");
+			}
+
+		}
 	}
 
 }
